@@ -93,6 +93,6 @@
     }
   ],
   "loggedIn": {
-    "status": true
+    "status": false
   }
 }
