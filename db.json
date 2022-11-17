@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "username": "abhimanyusoni",
+      "password": "1234567890",
+      "phone": "22121212",
+      "confpassword": "1234567890",
+      "id": 2
+    },
+    {
+      "username": "abhimanyusoni112",
+      "password": "121212",
+      "phone": "112233",
+      "confpassword": "121212",
+      "id": 3
+    },
+    {
+      "username": "abhimanyusoni11111",
+      "password": "ddsdsd",
+      "phone": "1121",
+      "confpassword": "dsdsdsd",
+      "id": 4
+    },
+    {
+      "username": "12Abhi",
+      "password": "aaaa",
+      "phone": "212121",
+      "confpassword": "aaaa",
+      "id": 5
+    },
+    {
+      "username": "abhimanyusoni@gmail.com",
+      "password": "Abhi@123",
+      "phone": "9904918167",
+      "confpassword": "Abhi@123",
+      "id": 6
+    },
+    {
+      "username": "radio@mail.com",
+      "password": "radio@123",
+      "phone": "998221838",
+      "confpassword": "radio@123",
+      "id": 7
+    },
+    {
+      "username": "eewewwew",
+      "password": "ABHI",
+      "phone": "1112121",
+      "confpassword": "ABHI",
+      "id": 8
+    },
+    {
+      "username": "wqwqwqw",
+      "password": "12121",
+      "phone": "221212",
+      "confpassword": "1212122",
+      "id": 9
+    },
+    {
+      "username": "wqwqwq",
+      "password": "asasas",
+      "phone": "11212",
+      "confpassword": "asasas",
+      "id": 10
+    },
+    {
+      "username": "abhimanyusoni+2@gmail.com",
+      "password": "12345",
+      "phone": "12345",
+      "confpassword": "12345",
+      "id": 11
+    },
+    {
+      "username": "abhimanyusoni+3@gmail.com",
+      "password": "12345",
+      "phone": "98765",
+      "confpassword": "12345",
+      "id": 12
+    },
+    {
+      "username": "abhimanyusoni+4@gmail.com",
+      "password": "1234",
+      "phone": "11112",
+      "confpassword": "1234",
+      "id": 13
+    },
+    {
+      "username": "abhimanyusoni222@gmail.com",
+      "password": "Abhi@123",
+      "confpassword": "Abhi@123",
+      "phone": "9993393",
+      "id": 14
+    }
+  ],
+  "loggedIn": {
+    "status": true
+  }
+}

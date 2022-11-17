@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #dc3545;
+}
+
+body {
+  background-color: #fff !important;
+}
+
+.sidebar_main {
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ebebeb;
+  z-index: 99;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+.main_content {
+  max-width: calc(100% - 300px);
+  width: 100%;
+  margin-left: auto;
+  -webkit-transition: 0.3s all ease-in-out;
+}
+
+.main_content .afterlogin_childs {
+  padding: 20px;
+}
+
+.main_content .site_topbar {
+  padding: 15px 20px;
+  background: #dc3545;
+  color: #fff;
+}
+
+.user_dropdown {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.user_dropdown::after {
+  display: none !important;
+}
+
+body a {
+  color: #dc3545;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+body a:hover {
+  color: #000;
+}
+
+.btn-primary {
+  background: #dc3545 !important;
+  border: none !important;
+}
+
+.btn-primary a {
+  color: #fff !important;
+}
+
+.searchfilterbox {
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.searchboxclear {
+  padding: 7px 15px;
+  border: none;
+  background-color: #dc3545;
+  border-radius: 6px;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input_base {
+  padding: 8px 14px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 14px;
+  min-height: 42px;
+  width: 100%;
+}
+
+.expand_sidebar {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #dc3545;
+  transform: translateX(50%);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.sidebar_main {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.sidebar_main.collapsed {
+  max-width: 80px;
+}
+
+.sidebar_main.collapsed + .main_content {
+  max-width: calc(100% - 80px);
+}
+
+.sidebar_main.collapsed a svg {
+  margin-left: 8px;
+  margin-right: 0 !important;
+}
+
+.sidebar_main a,
+.sidebar_main a svg,
+.logout_btn {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.sidebar_main.expanded a.active-menu .menu_title {
+  font-weight: 700;
+  border-bottom: 1px solid #dc3545;
+}
+
+.sidebar_main.collapsed a.active-menu svg {
+  margin-left: 0px;
+}
+
+.sidebar_main.collapsed .logout_btn {
+  padding: 6px 10px 9px 6px;
+}
+.sidebar_main.collapsed .logout_btn svg {
+  margin-right: 0 !important;
+}
+
+.sidebar_main.collapsed .active-menu {
+  padding: 3px 6px 6px;
+  margin-left: 2px;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.site_topbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.userlist_header {
+  width: 100%;
+}
+
+.module_name + header {
+  padding: 0 !important;
+}
+
+.user_list_table {
+  padding: 15px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.user_list_table div {
+  background-color: #f0f0f0;
+}
+
+.rdt_TableRow:hover {
+  outline: none !important;
+  border-bottom-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.module_name_left > span:last-child {
+  display: none;
+}
+
+.module_name_left span {
+  font-size: 14px;
+}
+
+.input_base.textarea {
+  min-height: 110px;
+}
+
+.checkbox_cutom_parent {
+  position: relative;
+}
+
+.checkbox_parent,
+.radio_parent {
+  position: relative;
+}
+
+.checkbox_label,
+.radio_label {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.3;
+}
+
+.checkbox_label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b3b3b3;
+  background-color: #ebebeb;
+  border-radius: 3px;
+  z-index: 9;
+}
+
+.checkbox_label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background: url("../app/assets/images/check-mark.png") no-repeat center;
+  background-size: 16px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.radio_label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #dc3545;
+  background-color: #dc3545;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.radio_label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #b3b3b3;
+  background-color: #ebebeb;
+  z-index: 9;
+}
+
+.checkbox_custom,
+.radio_custom {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.checkbox_custom:checked + label::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.radio_custom:checked + label::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.react-datepicker-popper {
+  z-index: 20 !important;
+}
+.react-datepicker-popper[data-placement^="top"]
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="top"]
+  .react-datepicker__triangle::after,
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::after {
+  left: -20px !important;
+}
+
+.upload_parent {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  border: 2px dashed #b3b3b3;
+}
+
+.upload_parent input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 10;
+}
+
+.upload_parent .cutom_design {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.upload_parent .cutom_design img {
+  width: 35px;
+  margin-bottom: 6px;
+}
+
+.upload_parent .cutom_design p {
+  font-size: 14px;
+}
+
+.form_label {
+  font-size: 14px;
+}
+
+.notification_main .dropdown-menu {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification_main .dropdown-menu a {
+  border-top: 1px solid #ececec;
+}
+
+.notification_main .dropdown-menu a > div {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.noti_desc {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.noti_title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #dc3545;
+  padding: 5px 0;
+}
+
+.preview_image_ {
+  height: 110px;
+  border: 1px solid #dedede;
+}
+
+.close_preview_img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.preview_container {
+  position: relative;
+  width: max-content;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .sidebar_main.collapsed {
+    max-width: 60px;
+  }
+  .sidebar_main {
+    padding: 10px;
+  }
+  .sidebar_main.collapsed + .main_content {
+    max-width: calc(100% - 60px);
+  }
+  .main_content .afterlogin_childs {
+    padding: 20px 18px;
+  }
+  .main_content .afterlogin_childs > .container {
+    padding: 0;
+  }
+  .expand_sidebar {
+    display: none;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  .module_name_left span {
+    font-size: 12px;
+  }
+  .checkbox_label,
+  .radio_label {
+    font-size: 14px;
+  }
+  .checkbox_label::after,
+  .radio_label::after {
+    width: 16px;
+    height: 16px;
+  }
+  .radio_label::before {
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+  }
+  .checkbox_label::before {
+    width: 16px;
+    height: 16px;
+    background-size: 12px;
+  }
+}
